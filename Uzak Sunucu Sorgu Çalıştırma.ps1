@@ -1,4 +1,4 @@
-﻿
+$instance = Get-Content -Path "C:\PSScripts\server-list.txt"
 
 
-Invoke-DbaQuery -SqlInstance "ro04\retailstore" -Database "master" -File "C:\PSScripts\query.txt"
+Invoke-DbaQuery -SqlInstance $instance -Database "master" -File "C:\PSScripts\query.txt"
